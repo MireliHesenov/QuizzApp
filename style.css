@@ -1,0 +1,135 @@
+:root{
+
+    background: #3282b8 ;
+    font-size: 62%;
+    font-family: "PT Sans", sans-serif;
+    
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.error{
+    position: absolute;
+    width:50%;
+    padding: 1rem;
+    text-align:center;
+    background: rgb(170, 16, 16);
+    color: #f2f2f2;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+ }
+h1{
+    color: #fff;
+}
+.container{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    
+}
+.container input{
+    border:0.1rem solid #f2f2f2;
+    background: transparent;
+    border-radius: 0.1rem;
+    outline: none;
+    padding:0.5rem 1rem;
+    color: #f2f2f2;
+    margin-top:1rem;
+}
+input::placeholder{
+    color: #f2f2f2;
+}
+.container a{
+
+    text-decoration:none;
+    margin-top: 1rem;
+    color: black;
+    cursor: pointer;
+
+}
+.result{
+    display:flex;
+    justify-content:space-between;
+    padding:3rem;
+}
+.timer{
+    font-size: 3rem;
+    color: white;
+
+}
+.question{
+    box-sizing: border-box;
+    margin: 3rem auto;
+    width:90%;
+    background:#fff;
+    padding: 2rem 1rem;
+    border-radius: 0.6rem;
+    color:black;
+    font-weight:600;
+    font-size: 1.2rem;
+}
+.choices{
+    margin: 2rem auto;
+    width:90%
+}
+.choice-container{
+
+    background:#fff;
+    margin-top: 0.2rem;
+    display: flex;
+}
+.choice-container:hover{
+
+    background:#f3f3f3;
+
+}
+.prefix{
+    height: 100%;
+    padding:1.5rem;
+    background-color: darkblue;
+    color:#fff;
+}
+.choice{
+    padding:1.5rem 0;
+    padding-left:0.5rem;
+    width: 100%;
+}
+.correct{
+
+    background: rgb(16, 170, 16);
+}
+.incorrect{
+    background: rgb(170, 16, 16);
+}
+.scoreboard{
+    position: relative;
+    padding: 3.65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+.scoreboard h1{
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+.score{
+    font-size: 2.5rem;
+    color: #f2f2f2;
+    list-style-type: none;
+    
+}
+.score:not(:first-child){
+    margin-top: 1rem;
+}
+.score .rank{
+    color: yellow;
+    margin-right: 1rem;
+}

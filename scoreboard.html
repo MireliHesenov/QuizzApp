@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Scoreboard</title>
+      
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+ 
+</head>
+<body>
+    <div class="scoreboard">
+      <h1>Results !!</h1>
+      <ul class="scores">
+        
+      </ul>
+    </div>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyDF6DpniJgKo2y993AdJM4W6t7okt-VpNw",
+          authDomain: "quizzapp-2e8b5.firebaseapp.com",
+          databaseURL: "https://quizzapp-2e8b5.firebaseio.com",
+          projectId: "quizzapp-2e8b5",
+          storageBucket: "quizzapp-2e8b5.appspot.com",
+          messagingSenderId: "1028158888839",
+          appId: "1:1028158888839:web:4ca7484fcd97358bd5d122"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        db = firebase.firestore()
+        db.settings({timestampsInSnapshots:true})
+      </script>
+   <script  src="./app.js" ></script>
+   <script>
+       getResult();
+   </script>
+
+
+</body>
+</html>

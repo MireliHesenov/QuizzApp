@@ -1,0 +1,42 @@
+[
+    {   
+        
+        "question":"Mövcud olan ilk USB'nin yaddaş tutumu nə qədər idi ?",
+        "choice1": "1.44 MB",
+        "choice2":"64 MB",
+        "choice3": "8 MB",
+        "choice4": "Heç biri",
+        "answer":"8 MB"
+
+
+    },
+    {   
+    
+        "question":"JSON'un açılışı?",
+        "choice1": "Java Script Object Nation",
+        "choice2":"JavaScript Object Nation",
+        "choice3": "Java Simplified Object Notation" ,
+        "choice4": "Heç biri",
+        "answer":"JavaScript Object Nation"
+
+
+    },
+    {
+        
+        "question":"Nece programlasdirma dili movcuddur?",
+        "choice1": "80",
+        "choice2":"150",
+        "choice3": "5000 ",
+        "choice4": "2000",
+        "answer":"2000"
+    },
+    {   
+        
+        "question":"API'nin açılışı?",
+        "choice1": "Advanced Programming Interface",
+        "choice2":"Automated Programing Interface",
+        "choice3": "Application Programing Interface",
+        "choice4": "Heç biri",
+        "answer":"Application Programing Interface"
+    }
+]

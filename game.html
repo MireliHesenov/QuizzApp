@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quizz</title>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
+  
+</head>
+<body>
+
+   <div class="result">
+       <div class="result-item">
+           <div class="result-prefix">Question</div>
+            <h1 class="result-main-text" id="questionCounter">1/10</h1>
+       </div>
+       <div class="timer" id="timer">0</div>
+       <div class="result-item">
+        <div class="result-prefix">Score</div>
+         <h1 class="result-main-text" id="score">0</h1>
+    </div>
+   </div>
+    <div class="question">
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam, veritatis velit. Asperiores, eius itaque, veritatis explicabo, dolore quibusdam deserunt soluta perferendis sit expedita nostrum eveniet nisi neque exercitationem dolor molestiae!
+    </div>
+    <div class="choices" >
+     <div class="choice-container" >
+        <span class="prefix">A</span>
+        <p class='choice' data-number="1" > Lorem, ipsum.</p>
+       
+     </div>
+     <div class="choice-container" >
+        <span class="prefix">B</span>
+        <p class='choice' data-number="2" > Lorem, ipsum.</p>
+    </div>
+    <div class="choice-container"> 
+        <span class="prefix">C</span>
+        <p class='choice' data-number="3" > Lorem, ipsum.</p>
+    </div>
+    <div class="choice-container" >
+        <span class="prefix">D</span>
+        <p class='choice' data-number="4" > Lorem, ipsum.</p>
+    </div>
+    </div>
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+          apiKey: "AIzaSyDF6DpniJgKo2y993AdJM4W6t7okt-VpNw",
+          authDomain: "quizzapp-2e8b5.firebaseapp.com",
+          databaseURL: "https://quizzapp-2e8b5.firebaseio.com",
+          projectId: "quizzapp-2e8b5",
+          storageBucket: "quizzapp-2e8b5.appspot.com",
+          messagingSenderId: "1028158888839",
+          appId: "1:1028158888839:web:4ca7484fcd97358bd5d122"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        db = firebase.firestore()
+        db.settings({timestampsInSnapshots:true})
+      </script>
+
+    <script src="app.js" >
+    </script>
+
+    <script>
+         loadQuestion()
+    </script>
+
+    
+</body>
+</html>
